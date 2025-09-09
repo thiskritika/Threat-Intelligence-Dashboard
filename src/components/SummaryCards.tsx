@@ -10,9 +10,9 @@ export default function SummaryCards() {
   const totalURLs = iocs.filter((ioc) => ioc.type === "url").length;
 
   const cards = [
-    { title: "Total IPs", count: totalIPs, color: "bg-blue-500" },
-    { title: "Total Subnets", count: totalSubnets, color: "bg-green-500" },
-    { title: "Total URLs", count: totalURLs, color: "bg-red-500" },
+    { title: "Total IPs", count: totalIPs, color: "bg-gray-600" },
+    { title: "Total Subnets", count: totalSubnets, color: "bg-gray-600" },
+    { title: "Total URLs", count: totalURLs, color: "bg-gray-600" },
   ];
 
   return (

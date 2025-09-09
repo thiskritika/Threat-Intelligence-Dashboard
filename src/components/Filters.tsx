@@ -31,7 +31,7 @@ export default function Filters() {
   };
 
   return (
-    <div className="flex flex-wrap gap-4 items-center bg-white dark:bg-gray-800 p-4 rounded shadow">
+    <div className="flex flex-wrap gap-4 items-center bg-gray-800 dark:bg-gray-800 p-4 rounded shadow">
       <input
         type="text"
         placeholder="Search by value..."
@@ -43,9 +43,9 @@ export default function Filters() {
       <select
         value={typeFilter}
         onChange={(e) => setTypeFilter(e.target.value)}
-        className="px-3 py-2 border rounded"
+        className="px-3 py-2 border rounded bg-gray-800"
       >
-        <option value="all">All Types</option>
+        <option value="all" >All Types</option>
         <option value="ip">IP</option>
         <option value="subnet">Subnet</option>
         <option value="url">URL</option>
@@ -54,7 +54,7 @@ export default function Filters() {
       <select
         value={sourceFilter}
         onChange={(e) => setSourceFilter(e.target.value)}
-        className="px-3 py-2 border rounded"
+        className="px-3 py-2 border rounded bg-gray-800"
       >
         <option value="all">All Sources</option>
         <option value="blocklist.de">Blocklist.de</option>
@@ -64,7 +64,7 @@ export default function Filters() {
 
       <button
         onClick={handleFilter}
-        className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
+        className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-500"
       >
         Apply Filters
       </button>

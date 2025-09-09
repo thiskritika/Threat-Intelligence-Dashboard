@@ -1,12 +1,12 @@
 "use client";
 import { useIOCStore } from "../Store/useIOCStore";
-import {useEffect}  from "react";
+import { useEffect } from "react";
 import Navbar from "../components/navbar-menu-demo";
 import SummaryCards from "../components/SummaryCards"
 import Filters from "../components/Filters";
 import DataTable from "../components/DataTable";
 import Loader from "../components/Loader";
-import {IOC} from "../types/ioc"
+import { IOC } from "../types/ioc"
 
 
 export default function Page() {
@@ -22,15 +22,19 @@ export default function Page() {
     fetchIOCs();
   }, []);
   return (
-    <div  >
-       <main className="min-h-screen bg-white dark:bg-black">
-      <Navbar />
-    </main>
+
+    <>
+      <main className="p-6 bg-gray-900 min-h-screen text-white">
+        <div className="h-32  dark:bg-black">
+           <Navbar />
+        </div>
+      
       <div className="p-6 space-y-6">
         <SummaryCards />
         <Filters />
         {iocs.length === 0 ? <Loader /> : <DataTable />}
       </div>
-    </div>  
+    </main >
+       </>
   );
 }
