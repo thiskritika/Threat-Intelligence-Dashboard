@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Threat Feed UI
 
-## Getting Started
+Threat Feed UI is a web application built with **Next.js** and **Tailwind CSS**.  
+It provides a simple and modern interface to display threat intelligence data.  
+The project also uses **Zustand** for state management and **Framer Motion** for animations.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
+- Interactive and responsive dashboard  
+- Dark mode support  
+- Smooth animations with Framer Motion  
+- State management using Zustand  
+- Styled with Tailwind CSS  
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Installation
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/threat-feed-ui.git
+   cd threat-feed-ui
 
-## Learn More
+## Overview
+Threat Feed UI is designed to help users view and manage threat intelligence data efficiently.  
+The goal is to create a clean, responsive, and user-friendly interface for security researchers and analysts.
 
-To learn more about Next.js, take a look at the following resources:
+## Why This Project?
+- To practice **Next.js** and learn server-side rendering.  
+- To explore **Tailwind CSS** for fast UI design.  
+- To understand **state management** using Zustand.  
+- To build reusable UI components with animations.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Folder Structure
+threat-feed-ui/
+├── app/              (Next.js app router pages)
+├── components/       (Reusable UI components) 
+├── public/           (Static assets (images, icons, etc.)) 
+├── store/            (Zustand store for state management)
+├── styles/           (Global styles and Tailwind setup)
+├── package.json      (Project dependencies and scripts)
+└── README.md         (Documentation)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Future Improvements
+-  Add search functionality for threat data  
+-  Add charts & graphs for better visualization  
+-  Multi-language support  
+-  User authentication & role-based access

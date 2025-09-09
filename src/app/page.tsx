@@ -17,24 +17,22 @@ export default function Page() {
     const data: IOC[] = await res.json();
     setIOCs(data);
   };
-
   useEffect(() => {
     fetchIOCs();
   }, []);
   return (
-
     <>
       <main className="p-6 bg-gray-900 min-h-screen text-white">
         <div className="h-32  dark:bg-black">
-           <Navbar />
+          <Navbar />
         </div>
-      
-      <div className="p-6 space-y-6">
-        <SummaryCards />
-        <Filters />
-        {iocs.length === 0 ? <Loader /> : <DataTable />}
-      </div>
-    </main >
-       </>
+
+        <div className="p-6 space-y-6">
+          <SummaryCards />
+          <Filters />
+          {iocs.length === 0 ? <Loader /> : <DataTable />}
+        </div>
+      </main >
+    </>
   );
 }
